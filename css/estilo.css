@@ -1,0 +1,139 @@
+/*px para posicionamento fixo*/
+/*% para possicionar no tamanhdo da tela*/
+/* O rem é útil para criar layouts mais flexíveis e escaláveis*/
+/* font-size -- serve para definir o tamanho da letra do site */
+/*para referenciar o id se ussa o #*/
+/* para referenciar a classe se ussa o . (ponto) */
+
+/* O midia tem que esta sempre em baixa o tag que esta no modo pc ex: primeiro o PC (body) e dps o modo responsivo ( @media {})*/
+
+/*aqui iniciamos a estrutura*/
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    font-family: arial;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #A9A9A9;
+}
+
+/*aqui começa o cabeçalho*/
+header {
+    background: linear-gradient(to left, #000000, #4a0baf);
+    color: #ffff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+.grid{
+    display: grid; /* o diplay serve para mostrar o espaço que vamos trabalhar*/
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr)) ;
+    /* repeat(auto-fill) para reconher o tamanho da tela automaica para a div */
+    /* fr é o fragmento dentro do espaço */
+    /* grid-tamplate-columns ser para selecionar o modelo que vamos trabalhar no caso aqui sera por colunas 6x6 */ 
+    grid-gap: 20rem; /* grid-gap - para definir a separação dos itens */
+    margin: 0 auto;
+}
+
+.conteudo{
+    font-size: 1.6rem;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+
+#grid-conteudo{
+    border-radius: 20px;
+}
+
+.logo-topo{
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+#texto1{
+    margin: auto; /*para centralizar o texto*/
+    padding-left: 45%;
+    text-align: center;
+    padding: 3rem;
+    padding-top: 3.5rem;
+}
+
+/*APAGAR QUANDO O SIT ESTIVER PRONTO*/
+.obras{
+    height: 150px;
+    width: 200px;
+    margin-left: 100px;
+}
+
+/*Aqui vamo começar o corpo da pagina */
+.conteudo-corpo{
+    font-size: 1.6rem;
+    background: linear-gradient(to left, #000000, #4a0baf);
+    padding: 1.5rem;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-top: 17rem;
+}
+
+#grid-conteudo-corpo{
+    text-align: center;
+    border-radius: 20px;
+}
+
+#grid-corpo{
+    display: grid;
+    grid-template-columns: 300px 2fr;
+    grid-gap: 20;
+    max-width: 1200;
+    margin: 0 auto;
+    color: #ffff;
+    text-shadow: 1px 1px #000000;
+}
+
+#imagem-corpo{
+    width: 250px;
+    height: 250px;
+    border-radius: 100px;
+}
+
+/*botão do whats*/
+
+#whats {
+	right: 0;
+	bottom: 0;
+	position: fixed;
+	text-align: center;
+	font-size: 15px;
+	z-index: 1;
+	margin-right: 5px;
+}
+
+.conteudo-pagina{
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    max-width: 95%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background: linear-gradient(to left, #000000, #4a0baf);
+    color: #FFFFFF ;
+    border-radius: 10px 10px 0px 0px;
+}
